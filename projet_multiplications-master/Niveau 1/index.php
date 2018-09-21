@@ -84,6 +84,7 @@
 		
 		
 	</style>
+	
 </head>
 <body>
 
@@ -99,7 +100,7 @@
 		
 		<div class="fields">
 			<h3>Merci de sélectionner la table que vous voulez consulter:</h3>
-			<select name="table">
+			<select name="table" id="table">
 				<option value="0">Table de 0</option>
 				<option value="1">Table de 1</option>
 				<option value="2">Table de 2</option>
@@ -115,13 +116,15 @@
 		</div>
 	
 		<div class="action_buttons">
-			<div class="button"><input type="submit" value="Voir la table"></div>
-			<div class="button"><input type="reset" value="Annuler"></div>
+			<div class="button"><input type="submit" value="Voir la table" id="btnTable"></div>
+			<div class="button"><input type="reset" value="Annuler" id='btnAnnuler'></div>
 		</div>
 	
-	</div>	 
+	</div>
+	<div id="resultat"></div>	 
 </section>
 
 </form>
+<script src="script.js"></script>
 </body>
 </html>
